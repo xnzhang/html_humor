@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 文本格式化实例</title>
+</head>
+<body>
+<!--文本格式化
+此例演示如何在一个 HTML 文件中对文本进行格式化-->
+<b>this text is bold</b>
+<strong>this text is strong</strong>
+<big>this text is big</big>
+<em>this text is emphasized</em>
+<i>this text is italic</i>
+<small>this text is small</small>
+<p>this text contains<sub>subscript</sub></p>
+<p>this text contains<sup>subscript</sup></p>
+<!--预格式文本
+此例演示如何使用 pre 标签对空行和空格进行控制。-->
+<pre>
+    这是
+    预格式文本.
+    他保留了    空格
+    和换行
+</pre>
+<p>pre 标签适合显示计算机代码</p>
+<pre>
+    for(;;){
+        seat();
+        sleep();
+        code();
+        if(!live()){
+            break;
+        }
+    }
+</pre>
+
+<!--“计算机输出”标签
+此例演示不同的“计算机输出”标签的显示效果。-->
+<code>Computer code</code>
+<br/>
+<kbd>Keyboard input</kbd>
+<br/>
+<tt>Teletype text</tt>
+<br/>
+<samp>Sample text</samp>
+<br/>
+<var>Computer variable</var>
+<br/>
+
+<p>
+    <b>注释：</b>这些标签常用于显示计算机/编程代码。
+</p>
+
+<!--地址
+此例演示如何在 HTML 文件中写地址。-->
+<address>
+    Written by <a href="http://www.baidu.com">baidu</a>
+    Visit us at:<br/>
+    Example.com<br/>
+    Box 564,Disneyland<br/>
+    USA
+</address>
+
+<!--缩写和首字母缩写
+此例演示如何实现缩写或首字母缩写。-->
+<p>在某些浏览器中，当您把鼠标移至缩略词语上时，title 可用于展示表达的完整版本。</p>
+
+<p>仅对于 IE 5 中的 acronym 元素有效。</p>
+
+<p>对于 Netscape 6.2 中的 abbr 和 acronym 元素都有效。</p>
+<abbr title="android studio">AS</abbr>
+<acronym title="world wide web">www</acronym><br/>
+<!--文字方向
+此例演示如何改变文字的方向。-->
+<p>
+    如果您的浏览器支持 bi-directional override (bdo)，下一行会从右向左输出 (rtl)；
+</p>
+<bdo dir="rtl">
+    here is some hebrew text
+</bdo>
+
+<!--块引用
+此例演示如何实现长短不一的引用语。-->
+<p>
+    使用 blockquote 元素的话，浏览器会插入换行和外边距，而 q 元素不会有任何特殊的呈现。
+</p>
+我这里添加一个引入:
+<blockquote>引入引入引入引入引入</blockquote>
+我这里再添加一个引入:
+<q>引入引入引入引入引入</q>
+
+<!--删除字效果和插入字效果
+此例演示如何标记删除文本和插入文本。-->
+<p>大多数浏览器会改写为删除文本和下划线文本。</p>
+
+<p>一些老式的浏览器会把删除文本和下划线文本显示为普通文本。</p>
+
+<p>包子便宜了 原价
+    <del>10元</del>
+    一个,现在只要
+    <ins>2元</ins>
+    一个了
+</p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
