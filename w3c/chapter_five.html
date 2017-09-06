@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 表格实例</title>
+</head>
+<body>
+
+<!--表格
+这个例子演示如何在 HTML 文档中创建表格。-->
+<p>每个表格由 table 标签开始。</p>
+<p>每个表格行由 tr 标签开始。</p>
+<p>每个表格数据由 td 标签开始。</p>
+<table border="1">
+    <tr>
+        <td>一杯敬过往</td>
+        <td>一杯敬故乡</td>
+    </tr>
+    <tr>
+        <td>一杯敬希望</td>
+        <td>一杯敬死亡</td>
+    </tr>
+</table>
+
+<!--表格边框
+本例演示各种类型的表格边框。-->
+<p>设置表格边框 就只需要直接设置border对应数字,</p>
+
+<!--没有边框的表格
+本例演示一个没有边框的表格。-->
+<p>表格没有边框也很好弄 直接不指定border或是指定border为0</p>
+
+<!--表格中的表头(Heading)
+本例演示如何显示表格表头。-->
+<!--不得不说   html中的表格布局用静态页面写  确实很麻烦-->
+<table border="1">
+    <tr>
+        <th/>
+        <th>标题一</th>
+        <th>标题二</th>
+        <th>标题三</th>
+    </tr>
+    <tr>
+        <th>参数</th>
+        <td align="center">10</td> <!--我这里居中一个 果真可以-->
+        <td>100</td>
+        <td>1000</td>
+    </tr>
+</table>
+
+<!--空单元格
+本例展示如何使用 "&nbsp;" 处理没有内容的单元格。-->
+<p>这个好像没啥说的 &nbsp;</p>
+
+<!--带有标题的表格
+本例演示一个带标题 (caption) 的表格-->
+<p>为表格布局添加头描述 就需要使用标签:caption</p>
+
+<!--跨行或跨列的表格单元格
+本例演示如何定义跨行或跨列的表格单元格。-->
+<p>跨行单元格很简单,只需要设置,colspan或是rowspan参数就行</p>
+<table border="1">
+    <tr>
+        <th>标题一</th>
+        <th colspan="2">标题二</th>
+    </tr>
+    <tr>
+        <td align="center">10</td> <!--我这里居中一个 果真可以-->
+        <td>100</td>
+        <td>1000</td>
+    </tr>
+</table>
+
+<!--表格内的标签
+本例演示如何显示在不同的元素内显示元素。-->
+<table border="1">
+    <tr>
+        <td><p>这是一个段落</p>
+            <p>这是另一个段落</p>
+        </td>
+        <td>
+            这个单元包含了一个表格:
+            <table border="1">
+                <tr>
+                    <td>A</td>
+                    <td>B</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>D</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            这个单元包含了一个列表:
+            <ul>
+                <li>苹果</li>
+                <li>香蕉</li>
+                <li>菠萝</li>
+            </ul>
+        </td>
+        <td>
+            hello world
+        </td>
+    </tr>
+</table>
+
+<!--单元格边距(Cell padding)
+本例演示如何使用 Cell padding 来创建单元格内容与其边框之间的空白。
+单元格间距(Cell spacing)
+本例演示如何使用 Cell spacing 增加单元格之间的距离。-->
+<table border="1" cellpadding="10" cellspacing="20" bgcolor="aqua">
+    <tr>
+        <th>标题一</th>
+        <th colspan="2">标题二</th>
+    </tr>
+    <tr>
+        <td align="center">10</td>
+        <td>100</td>
+        <td>1000</td>
+    </tr>
+</table>
+
+<h4>在表格单元中排列内容<br/>
+    本例演示如何使用 "align" 属性排列单元格内容,以便创建一个美观的表格。</h4>
+<table border="1" width="400px">
+    <tr>
+        <td>消费项目....</td>
+        <td align="right">一月</td>
+        <td align="right">二月</td>
+    </tr>
+    <tr>
+        <td>衣服</td>
+        <td align="right">241.10</td>
+        <td align="right">50.20</td>
+    </tr>
+    <tr>
+        <td>化妆品</td>
+        <td align="right">241.10</td>
+        <td align="right">50.20</td>
+    </tr>
+    <tr>
+        <td>食物</td>
+        <td align="right">241.10</td>
+        <td align="right">50.20</td>
+    </tr>
+    <tr>
+        <td>总计</td>
+        <td align="right">241.10</td>
+        <td align="right">50.20</td>
+    </tr>
+</table>
+
+<h4>框架(frame)属性<br/>
+    本例演示如何使用 "frame" 属性来控制围绕表格的边框。<br/>
+    由于便签已经过期,这里就不学习了</h4>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
