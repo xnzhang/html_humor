@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 图像实例</title>
+</head>
+<body background="http://www.w3school.com.cn/i/eg_background.jpg">
+<h4>插入图像<br/>
+    本例演示如何在网页中显示图像。</h4>
+<p>一幅图像<img src="http://www.w3school.com.cn/i/eg_mouse.jpg"></p>
+<p>一幅动画图像<img src="http://www.w3school.com.cn/i/eg_cute.gif"></p>
+<p>请注意，插入动画图像的语法与插入普通图像的语法没有区别。</p>
+
+<h4>背景图片<br/>
+    本例演示如何向 HTML 页面添加背景图片</h4>
+<p>gif 和 jpg 文件均可用作 HTML 背景。</p>
+
+<p>如果图像小于页面，图像会进行重复。</p>
+
+<h4>排列图片<br/>
+    本例演示如何在文字中排列图像。</h4>
+<h2>未设置对齐方式的图像:</h2>
+<p>图像<img src="http://www.w3school.com.cn/i/eg_cute.gif">在文本中</p>
+<h2>已设置对齐方式的图像</h2>
+<p>图像<img src="http://www.w3school.com.cn/i/eg_cute.gif" align="bottom">在文本中</p>
+<p>图像<img src="http://www.w3school.com.cn/i/eg_cute.gif" align="center">在文本中</p>
+<p>图像<img src="http://www.w3school.com.cn/i/eg_cute.gif" align="top">在文本中</p>
+
+<h4>浮动图像<br/>
+    本例演示如何使图片浮动至段落的左边或右边。</h4>
+<p><img src="http://www.w3school.com.cn/i/eg_cute.gif" align="left">
+    带有图像的一个段落.图像的align属性设置为"left".图像将浮动到文本的左侧</p>
+<p><img src="http://www.w3school.com.cn/i/eg_cute.gif" align="right">
+    带有图像的一个段落.图像的align属性设置为"right".图像将浮动到文本的右侧</p>
+
+<h4>调整图像尺寸<br/>
+    本例演示如何将图片调整到不同的尺寸。</h4>
+<img src="http://www.w3school.com.cn/i/eg_mouse.jpg" width="50px" height="50px">
+<br/>
+<img src="http://www.w3school.com.cn/i/eg_mouse.jpg" width="100px" height="100px">
+<br/>
+<img src="http://www.w3school.com.cn/i/eg_mouse.jpg" width="200px" height="200px">
+<br/>
+
+<h4>为图片显示替换文本<br/>
+    本例演示如何为图片显示替换文本。在浏览器无法载入图像时，替换文本属性告诉读者们失去的信息。为页面上的图像都加上替换文本属性是个好习惯。</h4>
+<p>仅支持文本的浏览器无法显示图像，仅仅能够显示在图像的 "alt" 属性中指定的文本。在这里，"alt" 的文本是“向左转”。</p>
+<p>请注意，如果您把鼠标指针移动到图像上，大多数浏览器会显示 "alt" 文本。</p>
+<img src="http://www.w3school.com.cn/i/eg_goleft.gif" alt="像左转">
+<p>如果无法显示图像，将显示 "alt" 属性中的文本：</p>
+<img src="http://www.w3school.com.cn/i/eg_goleft11.gif" alt="像左转">
+
+<h4>制作图像链接<br/>
+    本例演示如何将图像作为一个链接使用。</h4>
+<p>您也可以把图像作为链接来使用</p>
+<a href="http://www.baidu.com">
+    <img src="http://www.w3school.com.cn/i/eg_buttonnext.gif" alt="点击跳转">
+</a>
+
+<h4>创建图像映射<br/>
+    本例显示如何创建带有可供点击区域的图像地图。其中的每个区域都是一个超级链接。</h4>
+<img src="http://www.w3school.com.cn/i/eg_planets.jpg" border="0" alt="planets" usemap="#planetmap">
+<map name="planetmap" id="planetmap">
+    <area shape="circle" coords="180,139,14" href="http://www.w3school.com.cn/i/eg_venus.gif" alt="venus">
+    <area shape="circle" coords="129,161,10" href="http://www.w3school.com.cn/i/eg_merglobe.gif" alt="mercury">
+    <area shape="rect" coords="0,0,110,260" href="http://www.w3school.com.cn/i/eg_sun.gif" alt="sun">
+</map>
+<p><b>注释:</b>img 元素中的 "usemap" 属性引用 map 元素中的 "id" 或 "name" 属性（根据浏览器），所以我们同时向 map 元素添加了 "id" 和 "name" 属性。</p>
+
+</body>
+</html>
+
+
+
+
+
