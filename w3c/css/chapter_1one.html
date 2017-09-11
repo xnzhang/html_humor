@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 背景实例：</title>
+    <style type="text/css">
+        h1 {
+            background-color: #00FF00;
+        }
+
+        body {
+            background-color: #FFFF00;
+        }
+
+        p {
+            background-color: #FA00FF;
+        }
+
+        .no2 {
+            background-color: #808080;
+            padding: 20px;
+        }
+    </style>
+    <style type="text/css">
+        .hight_light {
+            background-color: #FFFF00;
+        }
+    </style>
+    <style type="text/css">
+        .img_bg {
+            background-image: url(http://www.w3school.com.cn/i/eg_bg_04.gif);
+        }
+
+        .img_bg_repeat {
+            background-image: url(http://www.w3school.com.cn/i/eg_bg_03.gif);
+            background-repeat: repeat;
+        }
+
+        .img_bg_repeat_y {
+            background-image: url(http://www.w3school.com.cn/i/eg_bg_03.gif);
+            background-repeat: repeat-y;
+            width: auto;
+            height: 200px;
+        }
+
+        .img_bg_repeat_x {
+            background-image: url(http://www.w3school.com.cn/i/eg_bg_03.gif);
+            background-repeat: repeat-x;
+            width: auto;
+            height: 100px;
+        }
+
+        .one_img_bg {
+            background-image: url(http://www.w3school.com.cn/i/eg_bg_03.gif);
+            background-repeat: no-repeat;
+        }
+
+        .seat_bg_img {
+
+        }
+
+        body { /*始终位于窗体中间*/
+            background-image: url(http://www.w3school.com.cn/i/eg_bg_03.gif);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            /*background-position: center;*/
+            /*background-position: 20% 30%;*/
+            background-position: 200px 30px;
+        }
+
+        /*所有属性声明到一起时编辑器就不会提示优化了*/
+        .fix_bg_property {
+            width: 200px;
+            height: 200px;
+            background: center #FA00FF url(http://www.w3school.com.cn/i/eg_bg_03.gif) no-repeat;
+        }
+    </style>
+
+</head>
+<body>
+<!--提示：以下例子中的 CSS 代码均位于 HTML 的 head 部分，这样做的目的是为了利于演示例子本身。
+    在实际的开发中，使用 CSS 最好的方式是引用外部样式表。-->
+<h4>设置背景颜色<br/>
+    本例演示如何为元素设置背景颜色。</h4>
+
+<h1>这个是标题 1</h1>
+<h2>这是标题 2</h2>
+<p>这是段落</p>
+<p class="no2">这个段落设置了内边距</p>
+
+<h4>设置文本的背景颜色<br/>
+    本例颜色如何设置部分文本的背景颜色。</h4>
+<p><span class="hight_light">这是文本。</span> 这是文本。 这是文本。 这是文本。 这是文本。 这是文本。 这是文本。 这是文本。 这是文本。 这是文本。 这是文本。
+    这是文本。 这是文本。 这是文本。 这是文本。 这是文本。 这是文本。 <span class="hight_light">这是文本。</span></p>
+
+<h4 class="img_bg">将图像设置为背景<br/>
+    本例演示如何将图像设置为背景。</h4>
+
+<h4 class="img_bg_repeat">如何重复背景图像<br/>
+    本例演示如何重复背景图像。</h4>
+
+<h4 class="img_bg_repeat_y">如何在垂直方向重复背景图像<br/>
+    本例演示如何垂直地重复背景图像。</h4>
+
+<h4 class="img_bg_repeat_x">如何在水平方向重复背景图像<br/>
+    本例演示如何水平地重复背景图像。</h4>
+
+<h4 class="one_img_bg">如何仅显示一次背景图像<br/>
+    本例演示如何仅显示一次背景图像。</h4>
+
+<h4 class="seat_bg_img">如何放置背景图像<br/>
+    本例演示如何在页面上放置背景图像。</h4>
+<p><b>提示：</b>您需要把 background-attachment 属性设置为 "fixed"，才能保证该属性在 Firefox 和 Opera 中正常工作。</p>
+
+<h4>如何使用%来定位背景图像<br/>
+    本例演示如何使用百分比来在页面上定位背景图像。</h4>
+<p><b>注释：</b>为了在 Mozilla 中实现此效果，background-attachment 属性必须设置为 "fixed"。</p>
+
+<h4>如何使用像素来定位背景图像<br/>
+    本例演示如何使用像素来在页面上定位背景图像。</h4>
+
+<h4>如何设置固定的背景图像<br/>
+    本例演示如何设置固定的背景图像。图像不会随着页面的其他部分滚动。</h4>
+<!--这个都不用管   只要是不重复  这个基本就不会跟着滚-->
+
+<h4 class="fix_bg_property">所有背景属性在一个声明之中<br/>
+    本例演示如何使用简写属性来将所有背景属性设置在一个声明之中。</h4>
+</body>
+</html>
