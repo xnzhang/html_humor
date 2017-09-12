@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 边框(border)实例</title>
+    <style type="text/css">
+
+        ._1_p {
+            border: medium double rgb(250, 0, 255);
+        }
+
+        p.dotted {
+            border-style: dotted; /*虚线,点*/
+        }
+
+        p.dashed {
+            border-style: dashed; /*虚线,线*/
+        }
+
+        p.solid {
+            border-style: solid; /*实线*/
+        }
+
+        p.double {
+            border-style: double; /*双线条*/
+        }
+
+        p.groove {
+            border-style: groove;
+        }
+
+        p.ridge {
+            border-style: ridge;
+        }
+
+        p.inset {
+            border-style: inset; /*内嵌*/
+        }
+
+        p.outset {
+            border-style: outset; /*外嵌*/
+        }
+
+        p.soliddouble {
+            border-style: solid double; /*上下黑线*/
+        }
+
+        p.doublesolid {
+            border-style: double solid; /*左右黑线*/
+        }
+
+        p.groovedouble {
+            border-style: groove double; /*上下灰线*/
+        }
+
+        p.three {
+            border-style: solid double groove; /*上黑下灰*/
+        }
+
+        p.one {
+            border: solid 5px;
+        }
+
+        p.two {
+            border: solid thick;
+        }
+
+        p.three_ {
+            border: solid;
+            border-width: 5px 10px;
+        }
+
+        p.four {
+            border: solid;
+            border-width: 5px 10px 1px;
+        }
+
+        p.five {
+            border: solid;
+            border-width: 5px 10px 1px medium;
+        }
+
+        p.one_s {
+            /*border-style: solid;*/
+            /*border-color: #0000ff;*/
+            border: solid #0000ff;
+        }
+
+        p.two_s {
+            border-style: solid;
+            border-color: #ff0000 #0000ff;
+        }
+
+        p.three_s {
+            border-style: solid;
+            border-color: #ff0000 #00ff00 #0000ff;
+        }
+
+        p.four_s {
+            border-style: solid;
+            border-color: #ff0000 #00ff00 #0000ff rgb(250, 0, 255);
+        }
+
+        p._2_p {
+            border-style: solid;
+            border-bottom: thick red dotted;
+        }
+
+        p._3_p {
+            border: solid;
+            border-bottom-color: #FA00FF;
+        }
+
+        p.none_bottom {
+            border: solid;
+            border-bottom: none;
+        }
+
+        p.dotted_bottom {
+            border: solid;
+            border-bottom: dotted;
+        }
+
+        p.dashed_bottom {
+            border: solid;
+            border-bottom: dashed;
+        }
+
+        p.solid_bottom {
+            border-bottom: solid;
+        }
+
+        p.double_bottom {
+            border-bottom-style: double;
+        }
+
+        p.groove_bottom {
+            border-bottom-style: groove;
+        }
+
+        p.ridge_bottom {
+            border-bottom-style: ridge;
+        }
+
+        p.inset_bottom {
+            border-bottom-style: inset;
+        }
+
+        p.outset_bottom {
+            border-bottom-style: outset;
+        }
+    </style>
+</head>
+<body>
+<h4>所有边框属性在一个声明之中<br/>
+    本例演示用简写属性来将所有四个边框属性设置于同一声明中。</h4>
+<p class="_1_p">Some text</p>
+
+<h4>设置四边框样式<br/>
+    本例演示如何设置四边框样式。</h4>
+<p class="dotted">A dotted border</p>
+<p class="dashed">A dashed border</p>
+<p class="solid">A solid border</p>
+<p class="double">A double border</p>
+<p class="groove">A groove border</p>
+<p class="ridge">A ridge border</p>
+<p class="inset">An inset border</p>
+<p class="outset">An outset border</p>
+
+<h4>设置每一边的不同边框<br/>
+    本例演示如何在元素的各边设置不同的边框。</h4>
+<p class="soliddouble">Some text</p>
+<p class="doublesolid">Some text</p>
+<p class="groovedouble">Some text</p>
+<p class="three">Some text</p>
+
+<h4>所有边框宽度属性在一个声明之中<br/>
+    本例演示用简写属性来将所有边框宽度属性设置于同一声明中。</h4>
+<p class="one">Some text</p>
+<p class="two">Some text</p>
+<p class="three_">Some text</p>
+<p class="four">Some text</p>
+<p class="five">Some text</p>
+
+<p><b>注释：</b>"border-width" 属性如果单独使用的话是不会起作用的。请首先使用 "border-style" 属性来设置边框。</p>
+
+<!--奶奶的   这玩意写的真无聊啊(*/ω＼*)-->
+<h4>设置四个边框的颜色<br/>
+    本例演示如何设置四个边框的颜色。可以设置一到四个颜色。</h4>
+<p class="one_s">One-colored border!</p>
+<p class="two_s">Two-colored border!</p>
+<p class="three_s">Three-colored border!</p>
+<p class="four_s">Four-colored border!</p>
+<p><b>注释：</b>"border-width" 属性如果单独使用的话是不会起作用的。请首先使用 "border-style" 属性来设置边框。</p>
+
+<h4>所有下边框属性在一个声明中<br/>
+    本例演示用简写属性来将所有下边框属性设置在同一声明中。</h4>
+<p class="_2_p">This is some text in a paragraph.</p>
+
+<h4>设置下边框的颜色<br/>
+    本例演示如何设置下边框的颜色。</h4>
+<p class="_3_p">This is some text in a paragraph.</p>
+
+<h4>设置下边框的样式<br/>
+    本例演示如何设置下边框的样式。</h4>
+
+<p class="none_bottom">No bottom border.</p>
+<p class="dotted_bottom">A dotted bottom border.</p>
+<p class="dashed_bottom">A dashed bottom border.</p>
+<p class="solid_bottom">A solid bottom border.</p>
+<p class="double_bottom">A double bottom border.</p>
+<p class="groove_bottom">A groove bottom border.</p>
+<p class="ridge_bottom">A ridge bottom border.</p>
+<p class="inset_bottom">An inset bottom border.</p>
+<p class="outset_bottom">An outset bottom border.</p>
+
+11
+</body>
+</html>
