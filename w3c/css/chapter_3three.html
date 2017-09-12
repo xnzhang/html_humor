@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 字体(font)实例：</title>
+    <style type="text/css">
+        <!--
+        配置字体这个真得靠积累了-- >
+        p.serif {
+            font-family: "Times New Roman", Georgia, serif;
+        }
+
+        p.sansserif {
+            font-family: Arial, Verdana, sans-serif;
+        }
+
+        /*字体大小的设置估计很少用百分比吧*/
+        ._2_h1 {
+            font-size: 300%;
+        }
+
+        ._2_h2 {
+            font-size: 200%;
+        }
+
+        ._2_p {
+            font-size: 100%;
+        }
+
+        .normal {
+            font-style: normal;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        .oblique {
+            font-style: oblique;
+        }
+
+        .normal {
+            font-weight: normal;
+        }
+
+        .thick {
+            font-weight: bold;
+        }
+
+        .thicker {
+            font-weight: 900; /*数字怎么这么大呢*/
+        }
+
+        p.ex1 {
+            font: italic arial, sans-serif;
+        }
+
+        p.ex2 {
+            font: italic bold 12px/30px arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+<h4>设置文本的字体<br/>
+    本例演示如何设置文本字体。</h4>
+<h1 class="_1_h1">CSS font-family</h1>
+<p class="serif">This is a paragraph, shown in the Times New Roman font.</p>
+<p class="sansserif">This is a paragraph, shown in the Arial font.</p>
+
+<h4>设置字体尺寸<br/>
+    本例演示如何设置字体尺寸。</h4>
+<h1 class="_2_h1">This is header 1</h1>
+<h2 class="_2_h2">This is header 2</h2>
+<p class="_2_p">This is a paragraph</p>
+
+<h4>设置字体风格<br/>
+    本例演示如何设置字体风格。</h4>
+<p class="normal">This is a paragraph, normal.</p>
+<p class="italic">This is a paragraph, italic.</p>
+<p class="oblique">This is a paragraph, oblique.</p>
+
+<h4>设置字体的粗细<br/>
+    本例演示如何设置字体的粗细。</h4>
+<p class="normal">This is a paragraph</p>
+<p class="thick">This is a paragraph</p>
+<p class="thicker">This is a paragraph</p>
+
+<h4>所有字体属性在一个声明之内<br/>
+    本例演示如何使用简写属性将字体属性设置在一个声明之内。</h4>
+<p class="ex1">This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph.
+    This is a paragraph. This is a paragraph. This is a paragraph.</p>
+<p class="ex2">This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph. This is a paragraph.
+    This is a paragraph. This is a paragraph. This is a paragraph.</p>
+</body>
+</html>
