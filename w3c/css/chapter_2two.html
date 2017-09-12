@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 文本实例</title>
+    <style type="text/css">
+        body ._1_p {
+            color: red;
+        }
+
+        .ex {
+            color: #0000FF;
+        }
+
+        ._2_height_light {
+            background-color: yellow;
+        }
+
+        ._3_h1 {
+            letter-spacing: -0.5em;
+        }
+
+        ._3_h4 {
+            letter-spacing: 20px;
+        }
+
+        ._4_small {
+            line-height: 90%;
+        }
+
+        ._4_big {
+            line-height: 120%;
+        }
+
+        ._5_small {
+            line-height: 10px;
+        }
+
+        ._5_big {
+            line-height: 30px;
+        }
+
+        ._6_small {
+            line-height: 0.8;
+        }
+
+        ._6_big {
+            line-height: 1.2;
+        }
+
+        ._7_h1 {
+            text-align: center;
+        }
+
+        ._7_h2 {
+            text-align: left;
+        }
+
+        ._7_h3 {
+            text-align: right;
+        }
+
+        ._8_h1 {
+            text-decoration: overline;
+        }
+
+        ._8_h2 {
+            text-decoration: line-through;
+        }
+
+        ._8_h3 {
+            text-decoration: underline;
+        }
+
+        ._8_h4 {
+            text-decoration: blink;
+        }
+
+        ._8_a {
+            text-decoration: none
+        }
+
+        ._9_p {
+            text-indent: 1cm;
+        }
+
+        ._10_h1 {
+            text-transform: uppercase;
+        }
+
+        .uppercase {
+            text-transform: uppercase;
+        }
+
+        .lowercase {
+            text-transform: lowercase;
+        }
+
+        .capitalize {
+            text-transform: capitalize;
+        }
+
+        /*这个不错   能让文本保持在一行*/
+        ._11_p {
+            white-space: nowrap;
+        }
+
+        .spread {
+            word-spacing: 30px;
+        }
+
+        .tight {
+            word-spacing: -0.5em;
+        }
+    </style>
+</head>
+<body>
+
+<h4>设置文本颜色<br/>
+    本例演示如何设置文本的颜色。</h4>
+<h1 style="color: #00FF00">这是 heading 1</h1>
+<p class="_1_p">这是一段普通的段落。请注意，该段落的文本是红色的。在 body 选择器中定义了本页面中的默认文本颜色。</p>
+<p class="ex">该段落定义了 class="ex"。该段落中的文本是蓝色的。</p>
+
+<h4>设置文本的背景颜色<br/>
+    本例颜色如何设置部分文本的背景颜色。</h4>
+<p><span class="_2_height_light">这是文本。</span>这是文本。 这是文本。 这是文本。 这是文本。 这是文本。 这是文本。
+    这是文本。 这是文本。这是文本。 这是文本。 这是文本。 这是文本。 这是文本。 这是文本。 这是文本。
+    这是文本。 这是文本。 这是文本。<span class="_2_height_light">这是文本。</span></p>
+
+<h4>规定字符间距<br/>
+    本例演示如何增加或减少字符间距。</h4>
+<h1 class="_3_h1">This is header 1</h1>
+<h4 class="_3_h4">This is header 4</h4>
+
+<h4>使用百分比设置行间距<br/>
+    本例演示如何使用百分比值来设置段落中的行间距。</h4>
+<p>
+    这是拥有标准行高的段落。
+    在大多数浏览器中默认行高大约是 110% 到 120%。
+    这是拥有标准行高的段落。
+    这是拥有标准行高的段落。
+    这是拥有标准行高的段落。
+    这是拥有标准行高的段落。
+    这是拥有标准行高的段落。
+</p>
+
+<p class="_4_small">
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+</p>
+
+<p class="_4_big">
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+</p>
+
+<h4>使用像素值设置行间距<br/>
+    本例演示如何使用像素值来设置段落中的行间距。</h4>
+<p>
+    这是拥有标准行高的段落。
+    在大多数浏览器中默认行高大约是 20px。
+    这是拥有标准行高的段落。
+    这是拥有标准行高的段落。
+    这是拥有标准行高的段落。
+    这是拥有标准行高的段落。
+    这是拥有标准行高的段落。
+</p>
+
+<p class="_5_small">
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+</p>
+
+<p class="_5_big">
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+</p>
+
+<h4>使用数值来设置行间距<br/>
+    本例演示如何使用一个数值来设置段落中的行间距。</h4>
+<p>
+    这是拥有标准行高的段落。
+    默认行高大约是 1。
+    这是拥有标准行高的段落。
+    这是拥有标准行高的段落。
+    这是拥有标准行高的段落。
+    这是拥有标准行高的段落。
+    这是拥有标准行高的段落。
+</p>
+
+<p class="_6_small">
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+    这个段落拥有更小的行高。
+</p>
+
+<p class="_6_big">
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+    这个段落拥有更大的行高。
+</p>
+
+<h4>对齐文本<br/>
+    本例演示如何对齐文本。</h4>
+<h1 class="_7_h1">这是标题 1</h1>
+<h2 class="_7_h2">这是标题 2</h2>
+<h3 class="_7_h3">这是标题 3</h3>
+
+<h4>修饰文本<br/>
+    本例演示如何向文本添加修饰。</h4>
+<h1 class="_8_h1">这是标题 1</h1>
+<h2 class="_8_h2">这是标题 2</h2>
+<h3 class="_8_h3">这是标题 3</h3>
+<h4 class="_8_h4">这是标题 4</h4>
+<p><a class="_8_a" href="http://www.w3school.com.cn/index.html">这是一个链接</a></p>
+
+<h4>缩进文本<br/>
+    本例演示如何缩进文本首行。</h4>
+<p class="_9_p">
+    这是段落中的一些文本。
+    这是段落中的一些文本。
+    这是段落中的一些文本。
+    这是段落中的一些文本。
+    这是段落中的一些文本。
+    这是段落中的一些文本。
+    这是段落中的一些文本。
+    这是段落中的一些文本。
+    这是段落中的一些文本。
+    这是段落中的一些文本。
+    这是段落中的一些文本。
+    这是段落中的一些文本。
+</p>
+
+<h4>控制文本中的字母<br/>
+    本例演示如何控制文本中的字母。</h4>
+<h1 class="_10_h1">This Is An H1 Element</h1>
+<p class="uppercase">This is some text in a paragraph.</p>
+<p class="lowercase">This is some text in a paragraph.</p>
+<p class="capitalize">This is some text in a paragraph.</p>
+
+<h4>在元素中禁止文本折行<br/>
+    本例演示如何禁止在元素中的文本折行。</h4>
+<p class="_11_p">
+    这是一些文本。
+    这是一些文本。
+    这是一些文本。
+    这是一些文本。
+    这是一些文本。
+    这是一些文本。
+    这是一些文本。
+    这是一些文本。
+    这是一些文本。
+    这是一些文本。
+    这是一些文本。
+    这是一些文本。
+    这是一些文本。
+    这是一些文本。
+    这是一些文本。
+    这是一些文本。
+    这是一些文本。
+    这是一些文本。
+    这是一些文本。
+    这是一些文本。
+    这是一些文本。
+    这是一些文本。
+</p>
+
+<h4>增加单词间距<br/>
+    本例演示如何增加段落中单词间的距离。</h4>
+<p class="spread">This is some text. This is some text.</p>
+<p class="tight">This is some text. This is some text.</p>
+</body>
+</html>
