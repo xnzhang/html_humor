@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 伪类 (Pseudo-classes)实例</title>
+    <style type="text/css">
+
+        hr {
+            margin: 20px 100px 20px 100px;
+            border: 1px solid magenta;
+        }
+
+        /*这里得注意,冒号之间没空格  不然无效*/
+        a.aaaa:link {
+            color: #FF0000
+        }
+
+        a.aaaa:visited {
+            color: #00FF00
+        }
+
+        a.aaaa:hover {
+            color: #ff00ff;
+        }
+
+        a.aaaa:active {
+            color: #00ffff;
+        }
+
+        a.one, a.two, a.three, a.four:link {
+            color: #0000ff;
+        }
+
+        a.one, a.two, a.three, a.four:visited {
+            color: #00ff00;
+        }
+
+        a.one:hover {
+            color: #00ffff;
+        }
+
+        a.two:hover {
+            font-size: 110%;
+        }
+
+        a.three:hover {
+            background-color: magenta;
+        }
+
+        a.four:hover {
+            font-family: monospace;
+        }
+
+        a.five:link {
+            color: magenta;
+            text-decoration: none
+        }
+
+        a.five:visited {
+            color: #0000FF;
+            text-decoration: none;
+        }
+
+        a.five:hover {
+            background-color: grey;
+            color: #FFFF00;
+            text-decoration: line-through;
+        }
+
+        .form1 input:focus {
+            background-color: yellow;
+        }
+
+        div.child_sample p:first-child {
+            font-weight: bold;
+        }
+
+        div.child_sample ul li:first-child {
+            text-transform: uppercase;
+        }
+
+        q:lang(no) {
+            quotes: "~" "~";
+        }
+
+    </style>
+</head>
+<body>
+<h4>超链接<br/>
+    本例演示如何向文档中的超链接添加不同的颜色。</h4>
+<p><b><a href="#" class="aaaa">这是一个链接。</a></b></p>
+<p><b>注释：</b>在 CSS 定义中，a:hover 必须位于 a:link 和 a:visited 之后，这样才能生效！</p>
+<p><b>注释：</b>在 CSS 定义中，a:active 必须位于 a:hover 之后，这样才能生效！</p>
+<hr/>
+
+<h4>超链接 2<br/>
+    本例演示如何向超链接添加其他样式。</h4>
+<p>请把鼠标移动到这些链接上，以查看效果：</p>
+
+<p><b><a class="one" href="#">这个链接改变颜色</a></b></p>
+<p><b><a class="two" href="#">这个链接改变字体大小</a></b></p>
+<p><b><a class="three" href="#">这个链接改变背景颜色</a></b></p>
+<p><b><a class="four" href="#">这个链接改变字体系列</a></b></p>
+<p><b><a class="five" href="#">这个链接改变文本装饰</a></b></p>
+<hr/>
+
+<h4>超链接：:focus 的使用<br/>
+    本例演示如何使用 :focus 伪类（无法在 IE 中工作）。</h4>
+
+<form action="#" method="get" class="form1">
+    First name:<input type="text" name="first"><br/>
+    Last name:<input type="text" name="last"><br/>
+    <input type="submit" value="submit">
+</form>
+<p><b>注释：</b>如果已规定 !DOCTYPE，那么 Internet Explorer 8 （以及更高版本）支持 :focus 伪类。</p>
+<hr/>
+
+<h4>:first-child（首个子对象）<br/>
+    本例演示 :first-child 伪类的用法。</h4>
+<div class="child_sample">
+    <p>These are the necessary steps:</p>
+    <ul>
+        <li>intert key</li>
+        <li>turn key <strong>clockwise</strong></li>
+        <li>push accelerator</li>
+    </ul>
+    <p>Do <em>not</em> push the brake at the same time as the accelerator.</p>
+</div>
+<p><b>注释：</b>必须声明 DOCTYPE，这样 :first-child 才能在 IE 中生效。</p>
+<hr/>
+
+<h4>:lang（语言）<br/>
+    本例演示 :lang 伪类的用法。</h4>
+<p>:lang 伪类允许您为不同的语言定义特殊的规则。在下面的例子中，:lang 类为带有值为 "no" 的 lang 属性的 q 元素定义引号的类型：</p>
+<p>一些文本 <q lang="no">段落中的引用</q> 一些文本。</p>
+
+
+</body>
+</html>
