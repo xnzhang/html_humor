@@ -69,6 +69,113 @@ background-position的值可以是默认值，百分比，像素\
 [margin-left](http://www.w3school.com.cn/tiy/t.asp?f=csse_margin-left),
 [margin-right](http://www.w3school.com.cn/tiy/t.asp?f=csse_margin-right)。
 
+> 6.CSS 内边距 (padding) 实例
+
+* 看过外边距实例，这个内边距实例应该很好懂了哈。\
+这回我学乖了，参照外边距我这里就只记录[一个实例](http://www.w3school.com.cn/tiy/t.asp?f=csse_padding)
+和单独设置[左边距](http://www.w3school.com.cn/tiy/t.asp?f=csse_padding-left),
+[左边距2](http://www.w3school.com.cn/tiy/t.asp?f=csse_padding-left_percent)。
+
+> 7.CSS 列表实例
+
+* 主要学习了[无序列表](http://www.w3school.com.cn/tiy/t.asp?f=csse_list-style-type)，
+[有序列表](http://www.w3school.com.cn/tiy/t.asp?f=csse_list-style-type2)，
+他们设置列表样式都使用[list-style-type](http://www.w3school.com.cn/tiy/t.asp?f=csse_list-style-type_all)属性。\
+对咯   这里说明下，[图片](http://www.w3school.com.cn/tiy/t.asp?f=csse_list-style-image)也可以设置为列表样式的。\
+再提一个[list-style-position](http://www.w3school.com.cn/tiy/t.asp?f=csse_list-style-position)可以设置列表标记。\
+最后看个实例[(๑¯㉨¯๑)](http://www.w3school.com.cn/tiy/t.asp?f=csse_list-style)就结束了哈。
+
+> 8.CSS 表格实例
+
+* 学习html表格章节没少练习，这里主要介绍通过样式来改变表格布局。
+比如[table-layout](http://www.w3school.com.cn/tiy/t.asp?f=csse_table_table-layout)就可以控制表格内容是否会因为窗体缩小而被重叠。\
+比如[empty-cells](http://www.w3school.com.cn/tiy/t.asp?f=csse_table_empty-cells)控制空的单元格是否需要隐藏。\
+比如[border-collapse:collapse](http://www.w3school.com.cn/tiy/t.asp?f=csse_table_border-collapse)可以使表格变的清爽，合并边框。\
+比如[border-spacing](http://www.w3school.com.cn/tiy/t.asp?f=csse_table_border-spacing)就可以设置单元之间的空白。\
+记得 __caption__ 不？她的[caption-side](http://www.w3school.com.cn/tiy/t.asp?f=csse_table_caption-side)属性可以控制位置哦。
+
+> 9.轮廓（Outline） 实例
+
+* 这里不要以为轮廓就是border，这个是 **边框**。\
+洛阔相当于边框外的边框（原谅我理解很直白）。对应属性[outline](http://www.w3school.com.cn/tiy/t.asp?f=csse_outline)。\
+这个咧...其实洛阔外边框使用起来跟边框一样的[样式](http://www.w3school.com.cn/tiy/t.asp?f=csse_outline-style)，
+[颜色](http://www.w3school.com.cn/tiy/t.asp?f=csse_outline-color)什么的都一样。
+
+> 10.CSS 尺寸 (Dimension) 实例
+
+* 其实基础课程里面，这一章节只有两个知识点：高宽，行间距。比如设置高度，方法有[像素](http://www.w3school.com.cn/tiy/t.asp?f=csse_dim_height)，
+[百分比](http://www.w3school.com.cn/tiy/t.asp?f=csse_dim_height_percent)。\
+从中引申出来的有最大高度[max-height](http://www.w3school.com.cn/tiy/t.asp?f=csse_dim_max-height),
+最小高度[min-height](http://www.w3school.com.cn/tiy/t.asp?f=csse_dim_min-height)。\
+至于行间距：设置属性为 __line-height__ 设置方式有[百分比](http://www.w3school.com.cn/tiy/t.asp?f=csse_dim_line-height_percent),
+[像素](http://www.w3school.com.cn/tiy/t.asp?f=csse_dim_line-height_pixel),[数值](http://www.w3school.com.cn/tiy/t.asp?f=csse_dim_line-height_number)。
+
+> 11.CSS 分类 (Classification) 实例
+
+* 首先这里了解下内联和外联官方解释(我就当W3C为官方的(〃'▽'〃))。\
+__inline__  **默认。此元素会被显示为内联元素，元素前后没有换行符。** \
+__block__   **此元素将显示为块级元素，此元素前后会带有换行符。** \
+奶奶的在未看文档前还以为是啥高级特性呢，原来就是换行样式和不换行样式。\
+好了先[看这里](http://www.w3school.com.cn/tiy/t.asp?f=csse_display)演示一个内联样式，两个p表情一起不转行了。\
+在[看这里](http://www.w3school.com.cn/tiy/t.asp?f=csse_display_block)演示一个块级样式。\
+我勒个去居然还介绍了[浮动float](http://www.w3school.com.cn/tiy/t.asp?f=csse_float),
+先增加一个[例子便于理解](http://www.w3school.com.cn/tiy/t.asp?f=csse_float2),
+个人认为完为w3c讲[浮动](http://www.w3school.com.cn/tiy/t.asp?f=csse_float3)是最走心的,虽然表示看的半懂不懂，
+但[浮动](http://www.w3school.com.cn/tiy/t.asp?f=csse_float4)还是值得看滴。\
+毕竟听前端开发的人说，浮动用蛮多的其实，比如[创建水平菜单](http://www.w3school.com.cn/tiy/t.asp?f=csse_float5)。
+再比如[创建无表格的首页](http://www.w3school.com.cn/tiy/t.asp?f=csse_float6)。我擦本宝宝还想浮动下,可惜没例子了(*/ω＼*)。\
+实例中提到了定位，[相对定位](http://www.w3school.com.cn/tiy/t.asp?f=csse_position_relative),
+[绝对定位](http://www.w3school.com.cn/tiy/t.asp?f=csse_position_absolute),
+[固定定位](http://www.w3school.com.cn/tiy/t.asp?f=csse_position_fixed)。这个先不深入了解了，以后慢慢懂。\
+哎哟没站稳，实例中问了个问题：如何使元素不可见？这个有高级用法吗？设置 __display:none;__ 属性不就就可以了吗，
+[点进去](http://www.w3school.com.cn/tiy/t.asp?f=csse_visibility)一看     筽-----(￣.￣)。\
+废话不多说，有需要改变光标的小伙伴[看这里](http://www.w3school.com.cn/tiy/t.asp?f=csse_cursor)。\
+还有一个可以让元素换行的分类[clear](http://www.w3school.com.cn/tiy/t.asp?f=csse_class-clear)，用来清除禁止浮动的。
+
+> 12.CSS 定位 (Positioning) 实例
+
+* 虽然叫定位实例，但是前面一节已经提交了定位。这里记录下学习的内容。\
+[clip:rect(0px 50px 200px 0px)](http://www.w3school.com.cn/tiy/t.asp?f=csse_clip),裁剪，如果不设置定位，会显示不出效果。\
+[overflow](http://www.w3school.com.cn/tiy/t.asp?f=csse_overflow)设置文字是否需要滑块来控制文字的显示区域。\
+[vertical-align](http://www.w3school.com.cn/tiy/t.asp?f=csse_vertical-align)在文字中内嵌图片，可以通过这个属性来设置图片显示的位置。
+这个跟align不就重复了吗？\
+[z-index](http://www.w3school.com.cn/tiy/t.asp?f=csse_zindex2)可以设置图片跟元素谁在视图顶部和底部，个人觉得用来减少布局嵌套的吧,
+这里有一个需要注意的 __需要position属性支持__。\
+练着练着就发现实例又回到讲定位了，
+比如[top:0px](http://www.w3school.com.cn/tiy/t.asp?f=csse_position_top)可以使元素停留在视图顶部。\
+比如[bottom](bottom:5%)可是是元素停留在下边缘。还有[left:100px](http://www.w3school.com.cn/tiy/t.asp?f=csse_position_left)
+和[right:0px](http://www.w3school.com.cn/tiy/t.asp?f=csse_position_right)。这里就不多做介绍了。
+
+> 13.CSS 伪类 (Pseudo-classes)实例
+
+* 伪类样式，伪类样式，到底是个啥子！\
+伪类样式不同于一般的样式，比如p标签我设置颜色应该是这样 __p {bgcolor:#520520}__
+而伪类却不这样：__ul:first-child {}__ 却是这样的。\
+好了先来个[超链接](http://www.w3school.com.cn/tiy/t.asp?f=csse_link),
+再来个[超链接](http://www.w3school.com.cn/tiy/t.asp?f=csse_link2)。\
+对于输入框，我如果想设置其根据焦点改变属性可以这样[input:focus](http://www.w3school.com.cn/tiy/t.asp?f=csse_link_focus),
+伪类里面还提到过[:first-child（首个子对象）](http://www.w3school.com.cn/tiy/t.asp?f=csse_first-child)个人不理解这个有啥子用哈。\
+最后发现，伪类还可以自定义标签额[666](http://www.w3school.com.cn/tiy/t.asp?f=csse_lang)。
+
+> 14.CSS 伪元素 (Pseudo-elements)实例
+
+* 伪类元素只提到了两个一个事设置首字母特效[first-letter](http://www.w3school.com.cn/tiy/t.asp?f=csse_firstletter)，
+还有一个是[first-line](首行特效)。自己认为实际使用的不多，跟多了解[点这里](http://www.w3school.com.cn/css/css_pseudo_elements.asp)就行了。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
