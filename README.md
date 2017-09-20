@@ -82,5 +82,38 @@
 > 10.HTML 背景实例
 
 * 一个[好的配色](http://www.w3school.com.cn/tiy/t.asp?f=html_back_good)能是用户使用更舒适。\
-一个[不适合的配置](http://www.w3school.com.cn/tiy/t.asp?f=html_back_bad)使页面中的文字难于阅读。
+一个[不适合的配置](http://www.w3school.com.cn/tiy/t.asp?f=html_back_bad)使页面中的文字难于阅读。\
+[可用性强的背景图像](http://www.w3school.com.cn/tiy/t.asp?f=html_back_img)不失为一种很好的办法。
+
+> 11.HTML 样式 (style) 实例
+
+* 样式可以直接写在标签中，在学习W3C过程中，联系的代码都优先将样式写在[标签中](http://www.w3school.com.cn/tiy/t.asp?f=html_linknoline)。\
+但写在标签中的样式有个天然的缺陷，不方便复用。\
+所以在时机开发中可以将样式添加到标签[head](http://www.w3school.com.cn/tiy/t.asp?f=html_style)中。\
+当然，实际项目开发中也是作为[外部样式](http://www.w3school.com.cn/tiy/t.asp?f=html_link)引入的。
+
+> 12.HTML 头部 (head) 实例
+
+* 头部实例介绍的很少。\
+W3C中只介绍了[文档的标题](http://www.w3school.com.cn/tiy/t.asp?f=html_title)，标题只会显示在浏览器标签中。\
+还介绍了一个估计不太常用的东西[一个 target，所有的链接](http://www.w3school.com.cn/tiy/t.asp?f=html_base)。
+
+> 13.HTML 元信息 (meta) 实例
+
+* Meta 元素中的信息可以描述 [HTML 文档](http://www.w3school.com.cn/tiy/t.asp?f=html_meta)，
+[关键词](http://www.w3school.com.cn/tiy/t.asp?f=html_keywords)，
+[重定向](http://www.w3school.com.cn/tiy/t.asp?f=html_redirect)。\
+Meta 元素的作用是提供文档的元信息。大多数情况下，meta 元素用来提供与浏览器或者搜索引擎相关的信息，比方说描述文档的内容等等。
+对于Meta元素的更多了解[点这里](http://www.w3school.com.cn/html/html_meta.asp)。
+
+> 14.HTML 脚本 (Script) 实例
+
+* 这里只是简单的介绍了html插入一个[简单的脚本](http://www.w3school.com.cn/tiy/t.asp?f=html_script)。若浏览器不支持这个脚本
+运行就使用[noscript](http://www.w3school.com.cn/tiy/t.asp?f=html_noscript)标签。实际使用中没看到谁使用这个标签，看来大家都不怎么关心细节。
+
+
+
+
+
+
 
